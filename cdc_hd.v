@@ -1,6 +1,7 @@
 //题目要求：sync clka时钟域存在一个单周期pulse sync，sync拉高的时候将clkb中的output信号拉高。output信号拉高之后如果收到T1信号会拉低，如果没有收到sync信号，在T1时间端之后也会拉低。clka的频率大于clkb
 //要点：ouput信号有一个上升的条件，两个下降的条件
 //方案：快时钟域脉冲展宽+目标时钟域边沿检测
+//test
 module CDC_HD #(
     parameter T1=4
 )
